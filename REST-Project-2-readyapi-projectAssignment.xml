@@ -486,7 +486,7 @@
         <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:dataSource type="Excel">
             <con:configuration>
-              <file>C:/ReadyAPI/Assignment/Assignment.xlsx</file>
+              <file>C:/ReadyAPI/APIAssignment/Assignment.xlsx</file>
               <worksheet>Sheet1</worksheet>
               <cell>A2</cell>
               <ignoreEmpty>false</ignoreEmpty>
@@ -724,7 +724,7 @@
           <con:dataSink type="Excel">
             <con:configuration>
               <file/>
-              <outfile>C:/ReadyAPI/Assignment/Assignment.xlsx</outfile>
+              <outfile>C:/ReadyAPI/APIAssignment/Assignment.xlsx</outfile>
               <worksheet>Sheet1</worksheet>
               <cell>D2</cell>
               <evaluateFormulas>false</evaluateFormulas>
@@ -790,7 +790,7 @@
 import jxl.*
 import groovy.json.JsonSlurper
 
-Workbook wb = Workbook.getWorkbook(new File('C:/ReadyAPI/Assignment/TestData.xls'))
+Workbook wb = Workbook.getWorkbook(new File('C:/ReadyAPI/APIAssignment/TestData.xls'))
 //Create new user
 sheet = wb.getSheet(0)
 
